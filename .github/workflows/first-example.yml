@@ -7,11 +7,14 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v6
     - name: Welcome message
-      run: echo "My First github actions Job"
+      run: |
+       echo "My First github actions Job"
+       ld -ltra
+       cat README.md
 
-    - name: List Files
-      run: ls
+ #   - name: List Files
+ #     run: ls
 
-    - name: Read file
-      run: cat README.md
+ #   - name: Read file
+ #     run: cat README.md
       
