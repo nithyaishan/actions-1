@@ -9,7 +9,7 @@ jobs:
     - name: List and read files
       run: |
        echo "My First github actions Job"
-       ld -ltra
+       ls -ltra
        cat README.md
 
  #   - name: List Files
